@@ -12,9 +12,16 @@ const Contact = () => {
             amet, consectetur adip. lorem ipsum dolor sit amet, consectetur
             adip. lorem ipsum dolor sit amet, consectetur adip.
           </p>
-          <form action ="" className="contact-form">
-            <input type = "email"  className ="form-input" placeholder="enter email" />
-            <button type="submit" className="submit-btn">subscribe</button>
+          <form action= {process.env.EMAIL_URL} className="contact-form" method="POST">
+            <input
+              type="email"
+              className="form-input"
+              placeholder="enter email"
+              name='_replyto'
+            />
+            <button type="submit" className="submit-btn">
+              subscribe
+            </button>
           </form>
         </div>
       </div>

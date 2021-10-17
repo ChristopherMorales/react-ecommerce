@@ -15,6 +15,7 @@ import {
 } from './pages'
 
 function App() {
+  require('dotenv').config()
   return (
     <Router>
       <Navbar />
